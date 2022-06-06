@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>DFS Visualizer</title>
+  </head>
+  <body>
+    <div class="header-container">
+      <div class="header">This is a header</div>
+    </div>
+
+    <div class="container">
+      <div class="form-1">
+        <div class="line">
+          <label for="rows">Rows: </label>
+          <input type="text" id="row" value="5" />
+        </div>
+        <div class="line">
+          <label for="cols">Columns:</label>
+          <input type="text" id="col" value="5" />
+        </div>
+        <button onclick="create_board()">Send</button>
+      </div>
+
+      <div id="table-container" class="table-container"></div>
+    </div>
+
+    <script src="calc.js"></script>
+  </body>
+</html>

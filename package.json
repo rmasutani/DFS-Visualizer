@@ -1,0 +1,13 @@
+{
+  "name": "dfs-visualizer",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "author": "Rio Masutani",
+  "scripts": {
+    "test": "jest"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "25.1.0"
+  }
+}
