@@ -1,6 +1,10 @@
+"use strict";
+import { createElementWithText } from "./util.js";
+// const sample = require("./util");
+
 const tableContainer = document.getElementById("table-container");
 
-function create_board() {
+export function create_board() {
   // Clear previous table before creating a new one
   let child = tableContainer.lastElementChild;
   while (child) {
@@ -44,5 +48,11 @@ function create_board() {
     table.appendChild(tr);
   }
 
+  // const start_button = document.createElement("button");
+  // const start_text = document.createTextNode();
+
   tableContainer.appendChild(table);
 }
+
+const send_button = document.getElementById("send");
+send_button.addEventListener("click", create_board);

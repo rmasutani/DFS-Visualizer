@@ -16,18 +16,19 @@
       <div class="form-1">
         <div class="line">
           <label for="rows">Rows: </label>
-          <input type="text" id="row" value="5" />
+          <input type="number" id="row" value="5" />
         </div>
         <div class="line">
           <label for="cols">Columns:</label>
-          <input type="text" id="col" value="5" />
+          <input type="number" id="col" value="5" />
         </div>
-        <button onclick="create_board()">Send</button>
+        <button id="send">Send</button>
       </div>
 
       <div id="table-container" class="table-container"></div>
     </div>
 
-    <script src="calc.js"></script>
+    <script type="module" src="util.js"></script>
+    <script type="module" src="board.js"></script>
   </body>
 </html>
